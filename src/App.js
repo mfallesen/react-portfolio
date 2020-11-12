@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import { Container } from 'react-bootstrap';
 import './App.css';
+import Navbar from './components/PortNavbar'
+import Footer from './components/Footer'
+import About from './components/About';
+import { Route, Switch } from "react-router"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+        <Navbar/>
+        <Container>
+          <Switch>
+            <Route path="/about" component={About} />
+            {/* <Route path="/contact" component={Contact}/> */}
+            {/* <Route path="/portfolio" component={Portfolio} /> */}
+          </Switch>
+        </Container>
+        <Footer/>
     </div>
   );
 }
