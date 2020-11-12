@@ -4,6 +4,7 @@ import Navbar from './components/PortNavbar'
 import Footer from './components/Footer'
 import About from './components/About';
 import Portfolio from './components/Portfolio'
+import Contact from './components/Contact'
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom"
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
         <Container>
           <Switch>
             <Route path="/about" component={About} />
-            {/* <Route path="/contact" component={Contact}/> */}
+            <Route path="/contact" component={Contact}/>
             <Route path="/portfolio" component={Portfolio} />
           </Switch>
         </Container>
