@@ -1,5 +1,5 @@
 import React from 'react'
-// import about from "../../../public/assets/images/about-me.png"
+
 
 export default function About() {
     return (

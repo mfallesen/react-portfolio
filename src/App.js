@@ -3,20 +3,23 @@ import './App.css';
 import Navbar from './components/PortNavbar'
 import Footer from './components/Footer'
 import About from './components/About';
-import { Route, Switch } from "react-router"
+import Portfolio from './components/Portfolio'
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom"
 
 function App() {
   return (
     <div>
-        <Navbar/>
+      <Router>
+        <Navbar />
         <Container>
           <Switch>
             <Route path="/about" component={About} />
             {/* <Route path="/contact" component={Contact}/> */}
-            {/* <Route path="/portfolio" component={Portfolio} /> */}
+            <Route path="/portfolio" component={Portfolio} />
           </Switch>
         </Container>
-        <Footer/>
+        <Footer />
+      </Router>
     </div>
   );
 }
