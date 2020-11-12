@@ -1,0 +1,46 @@
+/* Media Query for Screensize of 576pixels or less */
+@media only screen and (max-width: 576px) {
+    .form-group {
+        margin-right: 10px;
+    }
+
+    .page-main-content {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .container-bp {
+        max-width: 500px;
+    }
+}
+/* Media Query for screensize between 576 and 768 pixels */
+@media only screen and (min-width: 576px) {
+    .container-shift-left {
+        margin-left: 50px;
+    }
+    .container-bp {
+        max-width: 500px;
+    }
+}
+
+/* Media Query for screensize of 768 to 992 pixels */
+@media only screen and (min-width: 768px) {
+    .container-shift-left {
+        margin-left: 50px;
+    }
+    .form-group {
+        margin-right: 150px;
+    }
+    .container-bp {
+        max-width: 500px;
+    }
+}
+/* Media Query for Screensize of 992 pixels or greater */
+@media only screen and (min-width: 992px) {
+    
+    .container-shift-left {
+        margin-left: 50px;
+    }
+    .container-bp {
+        max-width: 870px;
+    }
+}
