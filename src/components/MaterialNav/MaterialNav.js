@@ -47,10 +47,12 @@ const useStyles = makeStyles((theme) => ({
         flexGrow: 1,
         backgroundColor: theme.palette.background.paper,
         display: 'flex',
-        minWidth: 480
+        minWidth: 480,
+        overflow: 'visible',
     },
     tabs: {
         borderRight: `1px solid ${theme.palette.divider}`,
+        overflow: 'visible',
     },
 }));
 
