@@ -22,16 +22,16 @@ function App() {
 
         <Typography variant='h3' align='center'>Mikael Fallesen</Typography>
         <MaterialNav></MaterialNav>
-        <Router>
+        {/* <Router>
           <Navbar />
           <Container>
             <Switch>
-              {/* <Route  exact path="/contact" component={Contact}/> */}
+              <Route  exact path="/contact" component={Contact}/>
               <Route exact path="/portfolio" component={Portfolio} />
-              {/* <Route path="/about" component={About} /> */}
+              <Route path="/about" component={About} />
             </Switch>
           </Container>
-        </Router>
+        </Router> */}
         <Footer />
       </CssBaseline>
     </ThemeProvider>
